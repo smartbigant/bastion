@@ -54,7 +54,7 @@ pub struct DistributedContext {
 impl DistributedContext {
     ///
     /// Initializes distributed context with underlying actor's local context and cluster handle.
-    fn new(bctx: BastionContext, cluster: Arc<Cluster>, me: Uuid) -> Self {
+    pub fn new(bctx: BastionContext, cluster: Arc<Cluster>, me: Uuid) -> Self {
         DistributedContext {
             bctx,
             me,
