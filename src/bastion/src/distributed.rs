@@ -23,8 +23,8 @@ use uuid::Uuid;
 /// Cluster message that is sent and delivered among members
 #[derive(Debug)]
 pub struct ClusterMessage {
-    pub(crate) msg: Msg,
-    pub(crate) member: Uuid,
+    pub msg: Msg,
+    pub member: Uuid,
 }
 
 impl ClusterMessage {
